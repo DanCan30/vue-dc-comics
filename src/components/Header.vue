@@ -98,7 +98,7 @@ export default {
                     font-weight: bold;
                     text-decoration: none;
                     text-transform: uppercase;
-                    padding: 3rem 1rem;
+                    padding: 4.15rem 1rem;
 
                     &:hover {
                         border-bottom: 5px solid $brandColor;
