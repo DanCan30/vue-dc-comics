@@ -82,7 +82,7 @@ export default {
         align-items: center;
 
         img {
-            padding: 2rem 0;
+            padding: 1.5rem 0;
         }
     }
     nav {
@@ -98,7 +98,7 @@ export default {
                     font-weight: bold;
                     text-decoration: none;
                     text-transform: uppercase;
-                    padding: 4.15rem 1rem;
+                    padding: 3.65rem 1rem;
 
                     &:hover {
                         border-bottom: 5px solid $brandColor;

@@ -2,6 +2,8 @@
   <div id="app">
     <Header />
     <Content />
+    <Footer />
+    <Socials />
   </div>
 </template>
 
