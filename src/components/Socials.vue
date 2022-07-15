@@ -6,11 +6,11 @@
         </div>
         <div class="social-right">
             <a href="#">follow us</a>
-            <a href=""><img src="../assets/img/footer-facebook.png" alt=""></a>
-            <a href=""><img src="../assets/img/footer-twitter.png" alt=""></a>
-            <a href=""><img src="../assets/img/footer-youtube.png" alt=""></a>
-            <a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a>
-            <a href=""><img src="../assets/img/footer-periscope.png" alt=""></a>
+            <a href=""><img src="../assets/img/footer-facebook.png" alt="facebook"></a>
+            <a href=""><img src="../assets/img/footer-twitter.png" alt="twitter"></a>
+            <a href=""><img src="../assets/img/footer-youtube.png" alt="youtube"></a>
+            <a href=""><img src="../assets/img/footer-pinterest.png" alt="pinterest"></a>
+            <a href=""><img src="../assets/img/footer-periscope.png" alt="periscope"></a>
         </div>
     </div>
   </section>
@@ -35,7 +35,7 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 3rem 0;
+            padding: 2rem 0;
 
             a {
                 text-decoration: none;
@@ -45,11 +45,12 @@ export default {
                 width: 50%;
 
                 a {
-                    color: white;
+                    color: $brandSecondaryColor;
                     display: inline-block;
-                    padding: .75rem;
+                    padding: .75rem 1rem;
                     border: 2px solid $brandColor;
                     text-transform: uppercase;
+                    font-size: 1.3rem;
                 }
 
             }
@@ -63,7 +64,7 @@ export default {
                 a {
                     color: $brandColor;
                     text-transform: uppercase;
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
                     padding: 0 1rem;
                 }
             }

@@ -14,16 +14,18 @@ export default {
 
 <style lang="scss" scoped>
   @import "../stiles/mixins.scss";
+  @import "../stiles/variables.scss";
 
     main {
         background-color: #1C1C1C;
 
         div {
             @include generalContainer;
-            color: white;
+            color: $brandSecondaryColor;
 
             h2 {
-                padding: 5rem 0;
+              font-size: 2.1rem;
+                padding: 6rem 0;
             }
         }
     }

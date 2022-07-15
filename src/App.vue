@@ -2,16 +2,18 @@
   <div id="app">
     <Header />
     <Content />
+    <Store />
     <Footer />
     <Socials />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Content from './components/Content.vue'
-import Footer from './components/Footer.vue'
-import Socials from './components/Socials.vue'
+import Header from './components/Header.vue';
+import Content from './components/Content.vue';
+import Footer from './components/Footer.vue';
+import Socials from './components/Socials.vue';
+import Store from './components/Store.vue';
 
 export default {
   name: 'App',
@@ -20,8 +22,7 @@ export default {
     Content,
     Footer,
     Socials,
-
-
+    Store,
   }
 }
 </script>

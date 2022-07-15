@@ -92,13 +92,14 @@ export default {
 
             li {
                 display: inline-block;
+                margin: 0 1rem;
                 
                 a {
                     color: $textColor;
                     font-weight: bold;
                     text-decoration: none;
                     text-transform: uppercase;
-                    padding: 3.65rem 1rem;
+                    padding: 3.65rem 0;
 
                     &:hover {
                         border-bottom: 5px solid $brandColor;
