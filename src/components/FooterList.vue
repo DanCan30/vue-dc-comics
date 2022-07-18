@@ -1,44 +1,61 @@
 <template>
-  <section>
-    <h4>
-        {{ footerLists[0].title }}
-    </h4>
-    <ul>
-        <li v-for="(element, index) in footerLists[0].content" :key="index">
-            <a :href="element.ref">{{ element.name }}</a>
-        </li>
-    </ul>
-  </section>
+
+    <div>
+        <h3>
+            {{title}}
+          </h3>
+          <ul>
+            <li v-for="(element, index) in content" :key="index">
+              <a :href="element.url">{{ element.text }}</a>
+            </li>
+          </ul>
+    </div>
+
 </template>
 
 <script>
 export default {
+
+    props: {
+        title: String,
+        content: Array,
+    }
    
 }
 </script>
 
 <style lang="scss" scoped>
-    section {
 
-        float: left;
-        width: 30%;
-        padding: 1rem;
+@import "../assets/stiles/variables.scss";
 
-        h4 {
-            text-transform: uppercase;
-            font-size: 2rem;
-            color: white;
+    div {
+        width: calc(100% / 3);
+
+        h3 {
+        text-transform: uppercase;
+        color: $brandSecondaryColor;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
         }
 
         ul {
-            list-style: none;
+        list-style: none;
 
             li {
+
                 a {
-                    color: white;
+                    color: $textColor;
                     text-decoration: none;
+
+                    &:hover {
+                    color: $brandSecondaryColor;
+                    }
+
                 }
+
             }
         }
     }
+
 </style>

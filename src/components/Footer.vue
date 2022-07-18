@@ -2,16 +2,11 @@
   <footer>
     <div>
         <section class="footer-left">
-          <div v-for="(link, linkIndex) in footerLinks" :key="linkIndex">
-          <h3>
-            {{link.title}}
-          </h3>
-          <ul>
-            <li v-for="(element, elementIndex) in link.content" :key="elementIndex">
-              <a :href="element.url">{{ element.text }}</a>
-            </li>
-          </ul>
-          </div>
+          <FooterList v-for="(element, index) in footerLinks" :key="index"
+            :title="element.title"
+            :content="element.content" />
+          
+
         </section>
         <section class="footer-right">
 
@@ -23,9 +18,17 @@
 
 <script>
 
+import FooterList from './FooterList.vue';
+
+
 export default {
 
- data: function() {
+    
+    components: {
+        FooterList,
+    },
+
+    data: function() {
         return {
 
             footerLinks: 
@@ -112,8 +115,7 @@ export default {
                         },
                         
                     ]
-                },
-                
+                },  
                 {
                     title: "sites",
                     content: [
@@ -160,7 +162,7 @@ export default {
 
 <style lang="scss">
 @import "../assets/stiles/variables.scss";
-  @import "../assets/stiles/mixins.scss";
+@import "../assets/stiles/mixins.scss";
 
   footer {
 
@@ -179,35 +181,6 @@ export default {
             display: flex;
             flex-wrap: wrap;
 
-            div {
-              width: calc(100% / 3);
-
-              h3 {
-                text-transform: uppercase;
-                color: $brandSecondaryColor;
-                margin-bottom: 1rem;
-                font-size: 1.5rem;
-                letter-spacing: 2px;
-              }
-
-              ul {
-              list-style: none;
-
-                li {
-
-                  a {
-                    color: $textColor;
-                    text-decoration: none;
-
-                  &:hover {
-                    color: $brandSecondaryColor;
-                  }
-
-                  }
-
-                }
-              }
-            }
         }
 
         .footer-right {

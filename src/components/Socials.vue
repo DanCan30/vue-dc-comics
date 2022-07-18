@@ -5,12 +5,15 @@
             <a href="#">sign-up now!</a>
         </div>
         <div class="social-right">
-            <a href="#">follow us</a>
-            <a href=""><img src="../assets/img/footer-facebook.png" alt="facebook"></a>
-            <a href=""><img src="../assets/img/footer-twitter.png" alt="twitter"></a>
-            <a href=""><img src="../assets/img/footer-youtube.png" alt="youtube"></a>
-            <a href=""><img src="../assets/img/footer-pinterest.png" alt="pinterest"></a>
-            <a href=""><img src="../assets/img/footer-periscope.png" alt="periscope"></a>
+            <a class="follow-us" href="#">follow us</a>
+            <ul>
+                <li v-for="(social, index) in socialLinks" :key="index">
+                    <a href="social.url">
+                        <img :src="require(`../assets/img/footer${social.src}`)" alt="social.text">
+                        </a>
+                </li>
+            </ul>
+        
         </div>
     </div>
   </section>
@@ -18,7 +21,38 @@
 
 <script>
 export default {
-
+    data: function() {
+        return {
+            socialLinks: [
+                {
+                    src: "-facebook.png",
+                    url: "#",
+                    text: "facebook",
+                },
+                {
+                    src: "-twitter.png",
+                    url: "#",
+                    text: "twitter",
+                },
+                {
+                    src: "-youtube.png",
+                    url: "#",
+                    text: "youtube",
+                },
+                {
+                    src: "-pinterest.png",
+                    url: "#",
+                    text: "pinterest",
+                },
+                {
+                    src: "-periscope.png",
+                    url: "#",
+                    text: "periscope",
+                },
+                
+            ]
+        }
+    }
 }
 </script>
 
@@ -61,12 +95,21 @@ export default {
                 justify-content: flex-end;
                 align-items: center;
 
-                a {
-                    color: $brandColor;
-                    text-transform: uppercase;
-                    font-size: 1.3rem;
-                    padding: 0 1rem;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        display: inline-block;
+                    }
                 }
+
+                    a {
+                        color: $brandColor;
+                        text-transform: uppercase;
+                        font-size: 1.3rem;
+                        padding: 0 1rem;
+                    }
             }
         }
     }

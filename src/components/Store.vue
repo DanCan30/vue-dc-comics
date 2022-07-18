@@ -72,6 +72,10 @@ export default {
                 display: flex;
                 align-items: center;
 
+                &:nth-child(4) img {
+                    width: 3rem;
+                }
+                
                 img {
                     width: 4rem;
                 }
@@ -84,6 +88,7 @@ export default {
                     font-weight: normal;
                 }
             }
+
         }
     }
   }
