@@ -24,8 +24,8 @@ export default {
 
 <style lang="scss" scoped>
 
-@import "../stiles/mixins.scss";
-@import "../stiles/variables.scss";
+@import "../assets/stiles/mixins.scss";
+@import "../assets/stiles/variables.scss";
 
     section {
         background-color: #303030;

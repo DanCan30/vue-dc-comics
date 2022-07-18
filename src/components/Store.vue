@@ -3,7 +3,7 @@
         <div>
             <ul>
                 <li v-for="(element, index) in storeInfos" :key="index">
-                    <img :src="`../../bonus-images/buy-${element.imgSrc}`" :alt="element.text">
+                    <img :src="require(`../assets/img/buy-${element.imgSrc}`)" :alt="element.text">
                     <a :href="element.ref">{{ element.text }}</a>
                 </li>
             </ul>
@@ -51,8 +51,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import "../stiles/mixins.scss";
-    @import "../stiles/variables.scss";
+    @import "../assets/stiles/mixins.scss";
+    @import "../assets/stiles/variables.scss";
 
 
   section {

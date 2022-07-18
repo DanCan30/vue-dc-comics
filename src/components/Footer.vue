@@ -2,13 +2,13 @@
   <footer>
     <div>
         <section class="footer-left">
-          <div v-for="(list, index) in footerLists" :key="index">
+          <div v-for="(link, linkIndex) in footerLinks" :key="linkIndex">
           <h3>
-            {{list.title}}
+            {{link.title}}
           </h3>
           <ul>
-            <li v-for="(element, index) in footerLists[index].content" :key="index">
-              <a :href="element.ref">{{ element.name }}</a>
+            <li v-for="(element, elementIndex) in link.content" :key="elementIndex">
+              <a :href="element.url">{{ element.text }}</a>
             </li>
           </ul>
           </div>
@@ -28,38 +28,38 @@ export default {
  data: function() {
         return {
 
-            footerLists: 
+            footerLinks: 
             [
                 {
                     title: "dc comics",
                     content: [
                         {
-                            name: "characters",
-                            ref: "#",
+                            text: "characters",
+                            url: "#",
                         },
                         {
-                            name: "comics",
-                            ref: "#",
+                            text: "comics",
+                            url: "#",
                         },
                         {
-                            name: "movies",
-                            ref: "#",
+                            text: "movies",
+                            url: "#",
                         },
                         {
-                            name: "TV",
-                            ref: "#",
+                            text: "TV",
+                            url: "#",
                         },
                         {
-                            name: "games",
-                            ref: "#",
+                            text: "games",
+                            url: "#",
                         },
                         {
-                            name: "videos",
-                            ref: "#",
+                            text: "videos",
+                            url: "#",
                         },
                         {
-                            name: "news",
-                            ref: "#",
+                            text: "news",
+                            url: "#",
                         },
                     ]
                 },
@@ -67,48 +67,48 @@ export default {
                     title: "dc",
                     content: [
                         {
-                            name: "terms of use",
-                            ref: "#",
+                            text: "terms of use",
+                            url: "#",
                         },
                         {
-                            name: "privacy policy (new)",
-                            ref: "#",
+                            text: "privacy policy (new)",
+                            url: "#",
                         },
                         {
-                            name: "ad choices",
-                            ref: "#",
+                            text: "ad choices",
+                            url: "#",
                         },
                         {
-                            name: "advertising",
-                            ref: "#",
+                            text: "advertising",
+                            url: "#",
                         },
                         {
-                            name: "jobs",
-                            ref: "#",
+                            text: "jobs",
+                            url: "#",
                         },
                         {
-                            name: "subscriptions",
-                            ref: "#",
+                            text: "subscriptions",
+                            url: "#",
                         },
                         {
-                            name: "talent workshops",
-                            ref: "#",
+                            text: "talent workshops",
+                            url: "#",
                         },
                         {
-                            name: "CPSC certificates",
-                            ref: "#",
+                            text: "CPSC certificates",
+                            url: "#",
                         },
                         {
-                            name: "ratings",
-                            ref: "#",
+                            text: "ratings",
+                            url: "#",
                         },
                         {
-                            name: "shop help",
-                            ref: "#",
+                            text: "shop help",
+                            url: "#",
                         },
                         {
-                            name: "contact us",
-                            ref: "#",
+                            text: "contact us",
+                            url: "#",
                         },
                         
                     ]
@@ -118,24 +118,24 @@ export default {
                     title: "sites",
                     content: [
                         {
-                            name: "DC",
-                            ref: "#",
+                            text: "DC",
+                            url: "#",
                         },
                         {
-                            name: "MAD Magazine",
-                            ref: "#",
+                            text: "MAD Magazine",
+                            url: "#",
                         },
                         {
-                            name: "DC Kids",
-                            ref: "#",
+                            text: "DC Kids",
+                            url: "#",
                         },
                         {
-                            name: "DC Universe",
-                            ref: "#",
+                            text: "DC Universe",
+                            url: "#",
                         },
                         {
-                            name: "DC Power Visa",
-                            ref: "#",
+                            text: "DC Power Visa",
+                            url: "#",
                         },
                     ]
                 },
@@ -143,15 +143,15 @@ export default {
                     title: "shop",
                     content: [
                         {
-                            name: "Shop DC",
-                            ref: "#",
+                            text: "Shop DC",
+                            url: "#",
                         },
                         {
-                            name: "Shop DC Collectibles",
-                            ref: "#",
+                            text: "Shop DC Collectibles",
+                            url: "#",
                         },
                     ]
-                }
+                },
             ]
         }
     }
@@ -159,8 +159,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../stiles/variables.scss";
-  @import "../stiles/mixins.scss";
+@import "../assets/stiles/variables.scss";
+  @import "../assets/stiles/mixins.scss";
 
   footer {
 

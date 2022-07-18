@@ -5,9 +5,10 @@
         <nav>
 
             <ul>
-                <li v-for="(link, index) in navbarLinks" :key="index">
-                    <a :href="link.href">
-                        {{link.link}}
+                <li v-for="(headerLink, index) in navbarLinks" :key="index">
+                    <a :href="headerLink.href" 
+                        :class="{active: headerLink.selected === true}">
+                        {{headerLink.link}}
                     </a>
                 </li>
             </ul>
@@ -25,43 +26,53 @@ export default {
             navbarLinks: [
                 {
                 link: "characters",
-                href: "#"
+                href: "#",
+                selected: false,
                 },
                 {
                 link: "comics",
-                href: "#"
+                href: "#",
+                selected: true,
                 },
                 {
                 link: "movies",
-                href: "#"
+                href: "#",
+                selected: false,
                 },
                 {
                 link: "tv",
-                href: "#"
+                href: "#",
+                selected: false,
                 },
                 {
                 link: "games",
-                href: "#"
+                href: "#",
+                selected: false,
                 },
                 {
                 link: "collectibles",
-                href: "#"
+                href: "#",
+                selected: false,
                 },
                 {
                 link: "videos",
-                href: "#"
+                href: "#",
+                selected: false,
                 },
                 {
                 link: "fans",
-                href: "#"
+                href: "#",
+                selected: false,
                 },
                 {
                 link: "news",
-                href: "#"
+                href: "#",
+                selected: false,
                 },
                 {
                 link: "shop",
-                href: "#"
+                href: "#",
+                selected: false,
                 },
             ]
 
@@ -71,8 +82,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import "../stiles/mixins.scss";
-  @import "../stiles/variables.scss";
+  @import "../assets/stiles/mixins.scss";
+  @import "../assets/stiles/variables.scss";
 
 
     header {
@@ -101,7 +112,8 @@ export default {
                     text-transform: uppercase;
                     padding: 3.65rem 0;
 
-                    &:hover {
+                    &:hover,
+                    &.active {
                         border-bottom: 5px solid $brandColor;
                         color: $brandColor;
                     }
