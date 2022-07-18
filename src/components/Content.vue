@@ -8,6 +8,9 @@
         :series="comic.series"
         :type="comic.type" />
     </div>
+    <div>
+      <a href="#">load more</a>
+    </div>
   </main>
 </template>
 
@@ -108,14 +111,49 @@ export default {
   @import "../assets/stiles/variables.scss";
 
     main {
-        background-color: #1C1C1C;
+      background-color: #1C1C1C;
+      padding-top: 4rem;
+      position: relative;
 
-        div {
-            @include generalContainer;
-            color: $brandSecondaryColor;
-            display: flex;
-            flex-wrap: wrap;
+      div {
+          @include generalContainer;
+          color: $brandSecondaryColor;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
 
         }
+
+      a {
+        display: inline-block;
+        padding: 1rem 5rem;
+        text-align: center;
+        text-decoration: none;
+        color: $brandSecondaryColor;
+        background-color: $brandColor;
+        margin: 1rem auto;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: .3s;
+
+        &:hover {
+        color: $brandColor;
+        background-color: $brandSecondaryColor;
+        }
+      }
+
+      &::after {
+        content: 'current series';
+        display: inline-block;
+        color: $brandSecondaryColor;
+        background-color: $brandColor;
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        position: absolute;
+        top: -2rem;
+        font-weight: bold;
+        left: 22rem;
+      }
     }
 </style>

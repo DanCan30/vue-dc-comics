@@ -85,6 +85,14 @@ export default {
                     border: 2px solid $brandColor;
                     text-transform: uppercase;
                     font-size: 1.3rem;
+                    transition: .3s;
+
+                    &:hover {
+                    background-color: $brandSecondaryColor;
+                    border: 2px solid $brandSecondaryColor;
+                    color: $brandColor;
+
+                    }
                 }
 
             }
@@ -109,6 +117,10 @@ export default {
                         text-transform: uppercase;
                         font-size: 1.3rem;
                         padding: 0 1rem;
+
+                        &:hover {
+                            color: $brandSecondaryColor;
+                        }
                     }
             }
         }

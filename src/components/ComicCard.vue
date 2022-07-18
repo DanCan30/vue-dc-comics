@@ -23,8 +23,7 @@ export default {
 <style lang="scss" scoped>
 
   div.card {
-    width: calc((100% / 6) - 6rem);
-    margin: 3rem;
+    width: calc((100% / 6));
 
     h4 {
       text-transform: uppercase;
@@ -33,15 +32,23 @@ export default {
 
 
     .comic-img-container {
-      width: 100%;
+      width: 18rem;
+      height: 18rem;
+      overflow: hidden;
 
       
       img {
-        width: 17rem;
-        height: 17rem;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: top;
-        margin-bottom: 1rem;
+        transition: .3s;
+
+        &:hover {
+          transform: scale(1.2);
+          filter: saturate(40%);
+        }
       }
     }
 
