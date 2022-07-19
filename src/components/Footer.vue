@@ -37,15 +37,15 @@ export default {
                     title: "dc comics",
                     content: [
                         {
-                            text: "characters",
+                            text: "Characters",
                             url: "#",
                         },
                         {
-                            text: "comics",
+                            text: "Comics",
                             url: "#",
                         },
                         {
-                            text: "movies",
+                            text: "Movies",
                             url: "#",
                         },
                         {
@@ -53,15 +53,15 @@ export default {
                             url: "#",
                         },
                         {
-                            text: "games",
+                            text: "Games",
                             url: "#",
                         },
                         {
-                            text: "videos",
+                            text: "Videos",
                             url: "#",
                         },
                         {
-                            text: "news",
+                            text: "News",
                             url: "#",
                         },
                     ]
@@ -70,31 +70,31 @@ export default {
                     title: "dc",
                     content: [
                         {
-                            text: "terms of use",
+                            text: "Terms of use",
                             url: "#",
                         },
                         {
-                            text: "privacy policy (new)",
+                            text: "Privacy policy (new)",
                             url: "#",
                         },
                         {
-                            text: "ad choices",
+                            text: "Ad choices",
                             url: "#",
                         },
                         {
-                            text: "advertising",
+                            text: "Advertising",
                             url: "#",
                         },
                         {
-                            text: "jobs",
+                            text: "Jobs",
                             url: "#",
                         },
                         {
-                            text: "subscriptions",
+                            text: "Subscriptions",
                             url: "#",
                         },
                         {
-                            text: "talent workshops",
+                            text: "Talent workshops",
                             url: "#",
                         },
                         {
@@ -102,15 +102,15 @@ export default {
                             url: "#",
                         },
                         {
-                            text: "ratings",
+                            text: "Ratings",
                             url: "#",
                         },
                         {
-                            text: "shop help",
+                            text: "Shop help",
                             url: "#",
                         },
                         {
-                            text: "contact us",
+                            text: "Contact us",
                             url: "#",
                         },
                         

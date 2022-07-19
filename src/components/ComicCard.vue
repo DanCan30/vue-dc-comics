@@ -23,11 +23,13 @@ export default {
 <style lang="scss" scoped>
 
   div.card {
-    width: calc((100% / 6));
+    width: calc((100% / 6) - 2rem);
+    margin: 1rem;
 
     h4 {
       text-transform: uppercase;
       font-size: .8rem;
+      margin-top: 1rem;
     }
 
 

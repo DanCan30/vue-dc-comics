@@ -96,32 +96,31 @@ export default {
             padding: 1.5rem 0;
         }
     }
-    nav {
+
         
-        ul {
-            list-style: none;
+    nav ul {
+        list-style: none;
 
-            li {
-                display: inline-block;
-                margin: 0 1rem;
-                
-                a {
-                    color: $textColor;
-                    font-weight: bold;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    padding: 3.65rem 0;
+        li {
+            display: inline-block;
+            margin: 0 1rem;
+            
+            a {
+                color: $textColor;
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 3.65rem 0;
 
-                    &:hover,
-                    &.active {
-                        border-bottom: 5px solid $brandColor;
-                        color: $brandColor;
-                    }
+                &:hover,
+                &.active {
+                    border-bottom: 5px solid $brandColor;
+                    color: $brandColor;
                 }
             }
         }
     }
-        
+    
 
 
 </style>
